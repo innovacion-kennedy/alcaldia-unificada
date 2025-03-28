@@ -1,0 +1,271 @@
+tabla_o_vista,columna,tipo_dato,acepta_null,posicion
+areas,id_area,integer,NO,1
+areas,nombre_area,character varying,YES,2
+auth_group,id,integer,NO,1
+auth_group,name,character varying,NO,2
+auth_group_permissions,id,bigint,NO,1
+auth_group_permissions,group_id,integer,NO,2
+auth_group_permissions,permission_id,integer,NO,3
+auth_permission,id,integer,NO,1
+auth_permission,name,character varying,NO,2
+auth_permission,content_type_id,integer,NO,3
+auth_permission,codename,character varying,NO,4
+auth_user,id,integer,NO,1
+auth_user,password,character varying,NO,2
+auth_user,last_login,timestamp with time zone,YES,3
+auth_user,is_superuser,boolean,NO,4
+auth_user,username,character varying,NO,5
+auth_user,first_name,character varying,NO,6
+auth_user,last_name,character varying,NO,7
+auth_user,email,character varying,NO,8
+auth_user,is_staff,boolean,NO,9
+auth_user,is_active,boolean,NO,10
+auth_user,date_joined,timestamp with time zone,NO,11
+auth_user_groups,id,bigint,NO,1
+auth_user_groups,user_id,integer,NO,2
+auth_user_groups,group_id,integer,NO,3
+auth_user_user_permissions,id,bigint,NO,1
+auth_user_user_permissions,user_id,integer,NO,2
+auth_user_user_permissions,permission_id,integer,NO,3
+contratacion_contratacion,id,bigint,NO,1
+contratacion_contratacion,tipo_proceso,character varying,NO,2
+contratacion_contratacion,modalidad_seleccion,character varying,NO,3
+contratacion_contratacion,estado,character varying,NO,4
+contratacion_contratacion,porcentaje_tiempo_transcurrido,numeric,NO,5
+contratacion_contratacion,numero_orden,integer,NO,6
+contratacion_contratacion,numero_proceso,character varying,NO,7
+contratacion_contratacion,contrato,character varying,NO,8
+contratacion_contratacion,abogado,character varying,NO,9
+contratacion_contratacion,tipo_persona,character varying,NO,10
+contratacion_contratacion,contratista,character varying,NO,11
+contratacion_contratacion,numero_identificacion,bigint,NO,12
+contratacion_contratacion,domicilio,character varying,NO,13
+contratacion_contratacion,telefono,bigint,NO,14
+contratacion_contratacion,email,character varying,NO,15
+contratacion_contratacion,sexo,character varying,NO,16
+contratacion_contratacion,fecha_nacimiento,date,NO,17
+contratacion_contratacion,edad,integer,NO,18
+contratacion_contratacion,plataforma,character varying,YES,19
+contratacion_contratacion,link_plataforma,character varying,YES,20
+contratacion_contratacion,objeto_contrato,text,NO,21
+contratacion_contratacion,tipo_recurso,character varying,YES,22
+contratacion_contratacion,no_hay,integer,NO,23
+contratacion_contratacion,fecha_expedicion_no_hay,date,NO,24
+contratacion_contratacion,numero_sipse,integer,NO,25
+contratacion_contratacion,numero_cdp,integer,NO,26
+contratacion_contratacion,valor_cdp,bigint,NO,27
+contratacion_contratacion,fecha_cdp,date,NO,28
+contratacion_contratacion,numero_proyecto,integer,NO,29
+contratacion_contratacion,nombre_proyecto,character varying,NO,30
+contratacion_contratacion,fecha_suscripcion,date,NO,31
+contratacion_contratacion,acta_inicio,boolean,NO,32
+contratacion_contratacion,fecha_inicio_contrato,date,NO,33
+contratacion_contratacion,fecha_terminacion_incl_prorroga,date,NO,34
+contratacion_contratacion,fecha_terminacion_inicial,date,YES,35
+contratacion_contratacion,dias_para_terminar,integer,NO,36
+contratacion_contratacion,tiempo_contrato_dias,integer,NO,37
+contratacion_contratacion,tiempo_contrato_meses,integer,NO,38
+contratacion_contratacion,valor_inicial_contrato,bigint,NO,39
+contratacion_contratacion,valor_total_con_adiciones,bigint,NO,40
+contratacion_contratacion,honorarios_mensuales,bigint,NO,41
+contratacion_contratacion,valor_total_contrato_letras,text,NO,42
+contratacion_contratacion,numero_rp,integer,NO,43
+contratacion_contratacion,valor_rp,bigint,NO,44
+contratacion_contratacion,fecha_rp,date,NO,45
+contratacion_contratacion,fecha_aprobacion_poliza,date,NO,46
+contratacion_contratacion,designacion,character varying,NO,47
+contratacion_contratacion,supervisor,character varying,NO,48
+contratacion_contratacion,apoyo_supervision,character varying,NO,49
+contratacion_contratacion,dependencia,character varying,NO,50
+contratacion_contratacion,sub_dependencia_rol,character varying,NO,51
+contratacion_contratacion,rol,character varying,NO,52
+contratacion_contratacion,arl_nombre,character varying,YES,53
+contratacion_contratacion,nivel_riesgo_arl,character varying,NO,54
+contratacion_contratacion,fecha_inicio_suspension,date,YES,55
+contratacion_contratacion,fecha_final_suspension,date,YES,56
+contratacion_contratacion,plazo_suspension,integer,YES,57
+contratacion_contratacion,unidad_plazo,character varying,YES,58
+contratacion_contratacion,fecha_inicio_suspension2,date,YES,59
+contratacion_contratacion,fecha_final_suspension3,date,YES,60
+contratacion_contratacion,plazo_suspension4,integer,YES,61
+contratacion_contratacion,unidad_plazo5,character varying,YES,62
+contratacion_contratacion,cedente,character varying,YES,63
+contratacion_contratacion,cesionario,character varying,YES,64
+contratacion_contratacion,direccion_cedente,character varying,YES,65
+contratacion_contratacion,telefono_cedente,bigint,YES,66
+contratacion_contratacion,correo_cedente,character varying,YES,67
+contratacion_contratacion,identificacion_cedente,bigint,YES,68
+contratacion_contratacion,fecha_modificacion_cesion,date,YES,69
+contratacion_contratacion,fecha_inicio_cesion,date,YES,70
+contratacion_contratacion,numero_sipse_adicion,integer,YES,71
+contratacion_contratacion,fecha_terminacion_con_adicion,date,YES,72
+contratacion_contratacion,tiempo_adicion,integer,YES,73
+contratacion_contratacion,cdp_adicion,integer,YES,74
+contratacion_contratacion,fecha_cdp_adicion,date,YES,75
+contratacion_contratacion,valor_adicion,bigint,YES,76
+contratacion_contratacion,fecha_adicion,date,YES,77
+contratacion_contratacion,rp_adicion,integer,YES,78
+contratacion_contratacion,fecha_rp_adicion,date,YES,79
+contratacion_contratacion,numero_sipse_adicion_2,integer,YES,80
+contratacion_contratacion,fecha_terminacion_con_adicion_2,date,YES,81
+contratacion_contratacion,tiempo_adicion_2,integer,YES,82
+contratacion_contratacion,cdp_2,integer,YES,83
+contratacion_contratacion,fecha_cdp2,date,YES,84
+contratacion_contratacion,valor_adicion_2,bigint,YES,85
+contratacion_contratacion,fecha_adicion_2,date,YES,86
+contratacion_contratacion,rp_adicion_2,integer,YES,87
+contratacion_contratacion,fecha_rp_adicion_2,date,YES,88
+contratacion_contratacion,fecha_prorroga,date,YES,89
+contratacion_contratacion,plazo_prorroga,integer,YES,90
+contratacion_contratacion,nueva_fecha_terminacion,date,YES,91
+contratacion_contratacion,fecha_prorroga_2,date,YES,92
+contratacion_contratacion,plazo_prorroga_2,integer,YES,93
+contratacion_contratacion,nueva_fecha_terminacion_2,date,YES,94
+contratacion_contratacion,fecha_prorroga_3,date,YES,95
+contratacion_contratacion,plazo_prorroga_3,integer,YES,96
+contratacion_contratacion,nueva_fecha_terminacion_3,date,YES,97
+contratacion_contratacion,revision_contractual,text,YES,98
+cps_planta_cpsplanta,duplicar,integer,NO,1
+cps_planta_cpsplanta,cedula,bigint,NO,2
+cps_planta_cpsplanta,nombres,character varying,NO,3
+cps_planta_cpsplanta,fecha_terminacion_contrato,date,NO,4
+cps_planta_cpsplanta,proyecto,character varying,NO,5
+cps_planta_cpsplanta,actividad,character varying,YES,6
+cps_planta_cpsplanta,objeto,text,NO,7
+cps_planta_cpsplanta,honorarios,integer,NO,8
+cps_planta_cpsplanta,vlr_presupuesto,integer,NO,9
+cps_planta_cpsplanta,tiempo_meses,integer,NO,10
+cps_planta_cpsplanta,numero_personas_solicitadas,integer,NO,11
+cps_planta_cpsplanta,nivel_academico,character varying,NO,12
+cps_planta_cpsplanta,riesgo,character varying,NO,13
+cps_planta_cpsplanta,sipse,integer,YES,14
+cps_planta_cpsplanta,responsable,character varying,NO,15
+cps_planta_cpsplanta,vto_nohay,date,NO,16
+cps_planta_cpsplanta,gestor,character varying,YES,17
+cps_planta_cpsplanta,cdp,boolean,NO,18
+cps_planta_cpsplanta,memorando,boolean,NO,19
+cps_planta_cpsplanta,contratacion,boolean,NO,20
+cps_planta_cpsplanta,insumo_paa,boolean,YES,21
+cps_planta_cpsplanta,dependencia,character varying,NO,22
+cps_planta_cpsplanta,sub_dependencia,character varying,NO,23
+cps_planta_cpsplanta,obligaciones,text,NO,24
+cps_planta_cpsplanta,observaciones,text,YES,25
+cps_planta_cpsplanta,envio_2,text,YES,26
+cps_planta_cpsplanta,notas,integer,YES,27
+cps_planta_cpsplanta,estado_nohay,character varying,YES,28
+cps_planta_cpsplanta,perfil,character varying,YES,29
+datos_contractuales,id_contrato,integer,NO,1
+datos_contractuales,id_persona,integer,NO,2
+datos_contractuales,contrato,character varying,YES,3
+datos_contractuales,honorarios,numeric,YES,4
+datos_contractuales,cdp,character varying,YES,5
+datos_contractuales,crp,character varying,YES,6
+datos_contractuales,fecha_inicio,date,YES,7
+datos_contractuales,fecha_terminacion,date,YES,8
+datos_contractuales,estado_proceso,character varying,YES,9
+datos_contractuales,id_tipo_movimiento,integer,YES,10
+datos_contractuales,id_nivel_riesgo,integer,YES,11
+datos_no_hay,id_no_hay,integer,NO,1
+datos_no_hay,sipse,character varying,YES,2
+datos_no_hay,fecha_solicitud,date,YES,3
+datos_no_hay,fecha_vencimiento,date,YES,4
+datos_no_hay,perfil_sipse,text,YES,5
+datos_no_hay,numero_no_hay,character varying,YES,6
+datos_no_hay,abogado_a_cargo,character varying,YES,7
+datos_personales,id_persona,integer,NO,1
+datos_personales,id_identificacion,integer,NO,2
+datos_personales,primer_nombre,character varying,YES,3
+datos_personales,segundo_nombre,character varying,YES,4
+datos_personales,apellido_paterno,character varying,YES,5
+datos_personales,apellido_materno,character varying,YES,6
+datos_personales,telefono,character,YES,7
+datos_personales,correo,character varying,YES,8
+django_admin_log,id,integer,NO,1
+django_admin_log,action_time,timestamp with time zone,NO,2
+django_admin_log,object_id,text,YES,3
+django_admin_log,object_repr,character varying,NO,4
+django_admin_log,action_flag,smallint,NO,5
+django_admin_log,change_message,text,NO,6
+django_admin_log,content_type_id,integer,YES,7
+django_admin_log,user_id,integer,NO,8
+django_content_type,id,integer,NO,1
+django_content_type,app_label,character varying,NO,3
+django_content_type,model,character varying,NO,4
+django_migrations,id,bigint,NO,1
+django_migrations,app,character varying,NO,2
+django_migrations,name,character varying,NO,3
+django_migrations,applied,timestamp with time zone,NO,4
+django_session,session_key,character varying,NO,1
+django_session,session_data,text,NO,2
+django_session,expire_date,timestamp with time zone,NO,3
+geo_referencia,id_georeferencia,integer,NO,1
+geo_referencia,id_persona,integer,NO,2
+geo_referencia,direccion,character varying,YES,3
+geo_referencia,barrio,character varying,YES,4
+geo_referencia,localidad,character varying,YES,5
+geo_referencia,ciudad,character varying,YES,6
+geo_referencia,departamento,character varying,YES,7
+historico_entrevistas,id_entrevista,integer,NO,1
+historico_entrevistas,id_persona,integer,NO,2
+historico_entrevistas,fecha_entrevista,date,YES,3
+historico_entrevistas,nivel_actual,character varying,YES,4
+historico_entrevistas,area_actual,character varying,YES,5
+historico_entrevistas,titulo_academico,character varying,YES,6
+historico_entrevistas,url_hv,text,YES,7
+historico_entrevistas,hv_modificada,boolean,YES,8
+historico_entrevistas,observaciones,text,YES,9
+identificacion,id_identificacion,integer,NO,1
+identificacion,numero_identificacion,bigint,NO,2
+identificacion,lugar_expedicion,character varying,YES,3
+identificacion,fecha_expedicion,date,YES,4
+identificacion,tipo_documento,character varying,YES,5
+nivel_riesgo,id_riesgo,integer,NO,1
+nivel_riesgo,nivel,integer,YES,2
+nivel_riesgo,descripcion,character varying,YES,3
+notas_alcaldia,id_nota,integer,NO,1
+notas_alcaldia,id_persona,integer,NO,2
+notas_alcaldia,numero_nota,smallint,NO,3
+notas_alcaldia,observaciones,text,YES,4
+persona_roles,id_persona,integer,NO,1
+persona_roles,id_rol,integer,NO,2
+personas_no_hay,id_persona,integer,NO,1
+personas_no_hay,id_no_hay,integer,NO,2
+roles,id_rol,integer,NO,1
+roles,id_subgrupo,integer,NO,2
+roles,nombre_rol,character varying,NO,3
+subgrupos,id_subgrupo,integer,NO,1
+subgrupos,id_area,integer,NO,2
+subgrupos,nombre_subgrupo,character varying,NO,3
+tipo_movimiento,id_tipo,integer,NO,1
+tipo_movimiento,nombre_tipo,character varying,YES,2
+v_id_persona,id_persona,integer,YES,1
+vista_despacho,primer_nombre,character varying,YES,1
+vista_despacho,segundo_nombre,character varying,YES,2
+vista_despacho,apellido_paterno,character varying,YES,3
+vista_despacho,apellido_materno,character varying,YES,4
+vista_despacho,identificacion,bigint,YES,5
+vista_despacho,fecha_entrevista,date,YES,6
+vista_despacho,telefono,character,YES,7
+vista_despacho,correo,character varying,YES,8
+vista_despacho,nivel_actual,character varying,YES,9
+vista_despacho,area_actual,character varying,YES,10
+vista_despacho,url_hv,text,YES,11
+vista_despacho,perfil_sipse,text,YES,12
+vista_despacho,areas,character varying,YES,13
+vista_despacho,subgrupos,character varying,YES,14
+vista_despacho,roles,character varying,YES,15
+vista_despacho,riesgo,integer,YES,16
+vista_despacho,contrato,character varying,YES,17
+vista_despacho,sipse,character varying,YES,18
+vista_despacho,numero_no_hay,character varying,YES,19
+vista_despacho,fecha_solicitud,date,YES,20
+vista_despacho,fecha_vencimiento_no_hay,date,YES,21
+vista_despacho,cdp,character varying,YES,22
+vista_despacho,crp,character varying,YES,23
+vista_despacho,estado_proceso,character varying,YES,24
+vista_despacho,numero_nota,integer,YES,25
+vista_despacho,tipo_movimiento,character varying,YES,26
+vista_despacho,fecha_inicio,date,YES,27
+vista_despacho,fecha_terminacion,date,YES,28
+vista_despacho,honorarios,numeric,YES,29
+vista_despacho,abogado_a_cargo,character varying,YES,30
